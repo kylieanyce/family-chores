@@ -1,0 +1,26 @@
+{
+  "familyMembers": [],
+  "chores": [],
+  "familyChores": [
+      {
+          "id": 1,
+          "familyMemberId": 1,
+          "choreId": 4
+      },
+      {
+          "id": 2,
+          "familyMemberId": 1,
+          "choreId": 5
+      },
+      {
+          "id": 3,
+          "familyMemberId": 2,
+          "choreId": 5
+      },
+      {
+          "id": 4,
+          "familyMemberId": 2,
+          "choreId": 3
+      }
+    ]
+}
