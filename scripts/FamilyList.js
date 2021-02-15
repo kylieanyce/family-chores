@@ -16,14 +16,17 @@ export const FamilyList = () => {
         .then(getFamilyChores)
         .then(() => {
             
-            const chores = useChores()
-            const people = useFamilyMembers()
-            const peopleChores = useFamilyChores()
+            chores = useChores()
+            people = useFamilyMembers()
+            peopleChores = useFamilyChores()
+            console.table(chores)
+            console.table(people)
+            console.table(peopleChores)
             render(chores, people, peopleChores)
         })
 }
 
-const render = (chores, people, peopleChores) => {
+const render = (people) => {
     //maps through people array and for each obj it invokes getChoreRelationships
     contentTarget.innerHTML = people.map(person => {
         //finds people who are responsible for famChores and sets in var
